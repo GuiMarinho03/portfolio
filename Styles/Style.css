@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap'); /* Fonte Titulo e Subtitulo */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap'); /* Fonte Texto e Botão */
+
+:root{ /* Pseudoclasse global */
+    --cor-primaria: #2C3639; /* Sempre começar o nome da variável com "--" */
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #A27B5C;
+    --cor-hover: #3F4E4F;
+
+    --fonte-primaria: 'M PLUS 1 Code', sans-serif;
+    --fonte-secundaria: 'Encode Sans Expanded', sans-serif;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%; /* Se o padding for de 4 valores, devemos seguir a ordem "Padding Top, Padding Right, Padding Bottom, Padding Left" */
+
+}
+
+.cabecalho__menu{
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem; /* 1rem = 16px, para saber quanto deve usar basta dividir os px por 16. */
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;   
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px; /*Distância de um para o outro */
+}
+
+.apresentacao__links_subtitulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%; /* Comprimento */
+    text-align: center;
+    border-radius: 16px;
+    border: 2px solid var(--cor-terciaria); /* "2px" indica a expessura da borda */
+    font-size: 1.5rem;
+    padding: 21.5px 0; /* O primeiro valor indica o eixo vertical e o segundo o eixo horizontal*/
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao:hover{ /* Hover serve para alterarmos algo quando o mouse estiver por cima, neste caso muda a cor de fundo dos botões */
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem{
+    max-width: auto;
+    height: auto;
+    border-style: solid;
+    border-color: var(--cor-terciaria);
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+}
+
+p{
+    display: inline-block;
+}
+
+img{ /* Deixar imagem com borda redonda */
+    border-radius: 50%;
+}
+
+@media (max-width: 1200px){ /* Funciona como se fosse uma condição */
+    .cabecalho{
+        padding: 5%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}    
