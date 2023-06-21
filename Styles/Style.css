@@ -65,7 +65,7 @@ body {
 
 .titulo-destaque {
     text-decoration: none;
-    color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__texto{
@@ -114,7 +114,7 @@ body {
 
 .rodape {
     color: var(--cor-primaria);
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
     font-size: 1.5rem;
