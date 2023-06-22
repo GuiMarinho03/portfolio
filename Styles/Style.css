@@ -29,9 +29,9 @@ body {
 }
 
 .cabecalho__menu{
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+    display: flex;
+    gap: 80px;
+    
 }
 
 
@@ -136,7 +136,9 @@ img{ /* Deixar imagem com borda redonda */
     }
 
     .cabecalho__menu{
-        justify-content: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
     }
     
     .apresentacao{
